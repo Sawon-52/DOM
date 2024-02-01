@@ -15,5 +15,19 @@
 
 // console.dir(list.childern);
 
-const univers = document.querySelector('*');
-console.dir(univers);
+// const univers = document.querySelector('*');
+// console.dir(univers);
+
+const header = document.querySelector('.header');
+// console.dir(header.nextElementSibling);
+
+
+let div = document.createElement('div');
+div.id = 'note';
+div.className = 'content';
+div.innerHTML = '<p> Hi My name is mehedi hasan </p>';
+document.body.appendChild(div);
+
+const body = document.querySelector('body');
+console.dir(body.children);
+
