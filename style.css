@@ -75,3 +75,8 @@ body {
 .black-bg {
   background-color: #000;
 }
+
+.button{
+   display: flex;
+   justify-content: space-between;
+}

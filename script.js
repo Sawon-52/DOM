@@ -42,17 +42,26 @@ const box = document.querySelector('.boxes');
 // box5.innerHTML = '<h3> This is box Five </h3>';
 // box.appendChild(box5);
 
-const button = document.querySelector('.button');
-console.dir(button);
+var box5 = document.createElement('div');
+box5.className = 'box';
+box5.id = 'box5';
+box5.innerHTML = '<h3> This is box Five </h3>';
 
-button.addEventListener('click',  function(){
-    var box5 = document.createElement('div');
-    box5.className = 'box';
-    box5.id = 'box5';
-    box5.innerHTML = '<h3> This is box Five </h3>';
+const addButton = document.querySelector('.add_button');
+// console.dir(addButton);
+const remButton = document.querySelector('.rem_button');
+// console.dir(remButton);
+
+
+addButton.addEventListener('click', function(){
     box.appendChild(box5);
 
-    
-})
+});
+
+remButton.addEventListener('click', function(){
+    box5.remove();
+
+});
+
 
 
