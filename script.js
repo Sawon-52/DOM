@@ -46,22 +46,34 @@ var box5 = document.createElement('div');
 box5.className = 'box';
 box5.id = 'box5';
 box5.innerHTML = '<h3> This is box Five </h3>';
+box5.style.cssText = 'color: white';
+
+
 
 const addButton = document.querySelector('.add_button');
 // console.dir(addButton);
+
 const remButton = document.querySelector('.rem_button');
-// console.dir(remButton);
+// console.dir(remButton );
+
+remButton.style.cssText = 'display:none';
+
+
 
 
 addButton.addEventListener('click', function(){
     box.appendChild(box5);
+    remButton.style.cssText = 'display:block';
 
 });
 
 remButton.addEventListener('click', function(){
     box5.remove();
+    remButton.style.cssText = 'display:none';
 
 });
+
+
 
 
 
